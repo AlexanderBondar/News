@@ -25,6 +25,7 @@
 		57ED8DFE1DDE451F004B6BA3 /* ABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ED8DFD1DDE451F004B6BA3 /* ABUtils.m */; };
 		57ED8E011DDE4FA2004B6BA3 /* ABWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ED8E001DDE4FA2004B6BA3 /* ABWebViewController.m */; };
 		7E36691F9AF4AD03C33ADF83 /* libPods-NewsApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E7B068414DA47ED9DB5989 /* libPods-NewsApi.a */; };
+		D74766002AEBA72000FCD914 /* Test_CodeReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74765FF2AEBA72000FCD914 /* Test_CodeReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		57ED8E001DDE4FA2004B6BA3 /* ABWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABWebViewController.m; sourceTree = "<group>"; };
 		788E035C949DE474A00F4951 /* Pods-NewsApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApi/Pods-NewsApi.release.xcconfig"; sourceTree = "<group>"; };
 		D6E7B068414DA47ED9DB5989 /* libPods-NewsApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsApi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74765FE2AEBA72000FCD914 /* NewsApi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsApi-Bridging-Header.h"; sourceTree = "<group>"; };
+		D74765FF2AEBA72000FCD914 /* Test_CodeReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CodeReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				57ED8DE01DDB9D5B004B6BA3 /* Models */,
 				57ED8DE11DDB9D6B004B6BA3 /* Views */,
 				57ED8DAC1DDB9D30004B6BA3 /* Supporting Files */,
+				D74765FF2AEBA72000FCD914 /* Test_CodeReview.swift */,
+				D74765FE2AEBA72000FCD914 /* NewsApi-Bridging-Header.h */,
 			);
 			path = NewsApi;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				TargetAttributes = {
 					57ED8DA81DDB9D30004B6BA3 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1500;
 					};
 					57ED8DC11DDB9D30004B6BA3 = {
 						CreatedOnToolsVersion = 7.2;
@@ -335,6 +341,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -435,6 +442,7 @@
 				57ED8DFB1DDDE9AE004B6BA3 /* ABArticlesCell.m in Sources */,
 				57ED8DE81DDC6862004B6BA3 /* ABSource.m in Sources */,
 				57ED8DE51DDB9E07004B6BA3 /* ABServerManager.m in Sources */,
+				D74766002AEBA72000FCD914 /* Test_CodeReview.swift in Sources */,
 				57ED8DB11DDB9D30004B6BA3 /* AppDelegate.m in Sources */,
 				57ED8DEF1DDC7317004B6BA3 /* ABSourceCell.m in Sources */,
 				57ED8DFE1DDE451F004B6BA3 /* ABUtils.m in Sources */,
@@ -583,10 +591,14 @@
 			baseConfigurationReference = 25CCB5388D9A61F43AE931CA /* Pods-NewsApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NewsApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.NewsApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewsApi/NewsApi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -596,10 +608,13 @@
 			baseConfigurationReference = 788E035C949DE474A00F4951 /* Pods-NewsApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NewsApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.NewsApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewsApi/NewsApi-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -607,6 +622,7 @@
 		57ED8DDA1DDB9D30004B6BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NewsApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -619,6 +635,7 @@
 		57ED8DDB1DDB9D30004B6BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NewsApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -631,6 +648,7 @@
 		57ED8DDD1DDB9D30004B6BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NewsApiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.NewsApiUITests;
@@ -643,6 +661,7 @@
 		57ED8DDE1DDB9D30004B6BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NewsApiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.NewsApiUITests;

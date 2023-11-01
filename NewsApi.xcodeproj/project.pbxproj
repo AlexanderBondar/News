@@ -25,7 +25,6 @@
 		57ED8DFE1DDE451F004B6BA3 /* ABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ED8DFD1DDE451F004B6BA3 /* ABUtils.m */; };
 		57ED8E011DDE4FA2004B6BA3 /* ABWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ED8E001DDE4FA2004B6BA3 /* ABWebViewController.m */; };
 		7E36691F9AF4AD03C33ADF83 /* libPods-NewsApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E7B068414DA47ED9DB5989 /* libPods-NewsApi.a */; };
-		D74766022AEBAD3400FCD914 /* Test_Code_Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74766012AEBAD3400FCD914 /* Test_Code_Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,6 @@
 		57ED8E001DDE4FA2004B6BA3 /* ABWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABWebViewController.m; sourceTree = "<group>"; };
 		788E035C949DE474A00F4951 /* Pods-NewsApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApi/Pods-NewsApi.release.xcconfig"; sourceTree = "<group>"; };
 		D6E7B068414DA47ED9DB5989 /* libPods-NewsApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsApi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D74766012AEBAD3400FCD914 /* Test_Code_Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Code_Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +140,6 @@
 				57ED8DE01DDB9D5B004B6BA3 /* Models */,
 				57ED8DE11DDB9D6B004B6BA3 /* Views */,
 				57ED8DAC1DDB9D30004B6BA3 /* Supporting Files */,
-				D74766012AEBAD3400FCD914 /* Test_Code_Review.swift */,
 			);
 			path = NewsApi;
 			sourceTree = "<group>";
@@ -437,7 +434,6 @@
 			files = (
 				57ED8E011DDE4FA2004B6BA3 /* ABWebViewController.m in Sources */,
 				57ED8DB41DDB9D30004B6BA3 /* ViewController.m in Sources */,
-				D74766022AEBAD3400FCD914 /* Test_Code_Review.swift in Sources */,
 				57ED8DFB1DDDE9AE004B6BA3 /* ABArticlesCell.m in Sources */,
 				57ED8DE81DDC6862004B6BA3 /* ABSource.m in Sources */,
 				57ED8DE51DDB9E07004B6BA3 /* ABServerManager.m in Sources */,
@@ -618,7 +614,6 @@
 		57ED8DDA1DDB9D30004B6BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NewsApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -631,7 +626,6 @@
 		57ED8DDB1DDB9D30004B6BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NewsApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -644,7 +638,6 @@
 		57ED8DDD1DDB9D30004B6BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NewsApiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.NewsApiUITests;
@@ -657,7 +650,6 @@
 		57ED8DDE1DDB9D30004B6BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NewsApiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.NewsApiUITests;

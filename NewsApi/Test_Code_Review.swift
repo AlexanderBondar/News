@@ -69,8 +69,12 @@ final class FAThirdStepViewController: UIViewController {
     
     private let once = Once()
     
+    private let oldVariable: String?
+
     private var keyboardConstraint = NSLayoutConstraint()
     
+    private let newVariable: String = "doing nothing"
+
     private lazy var titleView: TitleWithStepsView = {
         let titleView = TitleWithStepsView()
         titleView.setSteps(
